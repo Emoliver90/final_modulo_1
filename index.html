@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Patrice Bäumel | Melodic Techno & Progressive</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <a href="#" class="logo">Patrice<span>Bäumel</span></a>
+    <ul class="nav-links">
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#tracks">Tracks</a></li>
+      <li><a href="#tour">Tour</a></li>
+    </ul>
+    <a href="#contacto" class="btn btn-outline">Escuchar Sets</a>
+  </nav>
+
+  <!-- HEADER -->
+  <header id="inicio" class="hero">
+    <div class="container hero-content">
+      <span class="badge">Melodic Techno &bull; Amsterdam</span>
+      <h1>Sonidos hipnóticos para la pista de baile</h1>
+      <p>Explora los lanzamientos esenciales, remixes y sesiones en vivo de Patrice Bäumel.</p>
+      <div class="hero-actions">
+        <a href="#tracks" class="btn btn-primary">Ver lanzamientos</a>
+        <a href="#tour" class="btn btn-secondary">Próximas fechas</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- CONTENIDO ESCALABLE -->
+  <main>
+    <section id="tracks" class="section container">
+      <div class="section-header">
+        <h2>Tracks Destacados</h2>
+        <p>Producciones emblemáticas en sellos como Afterlife, Kompakt y Watergate.</p>
+      </div>
+
+      <div class="grid-cards">
+        <article class="card">
+          <span class="card-tag">Afterlife</span>
+          <h3>Glutes</h3>
+          <p>Líneas de bajo profundas y sintetizadores progresivos que definen su sonido.</p>
+        </article>
+
+        <article class="card">
+          <span class="card-tag">Kompakt</span>
+          <h3>Surge</h3>
+          <p>Atmósfera envolvente y percusión hipnótica pensada para sesiones nocturnas.</p>
+        </article>
+
+        <article class="card">
+          <span class="card-tag">Watergate Records</span>
+          <h3>Roar</h3>
+          <p>Energía melódica creciente con texturas oscuras y emotivas.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="tour" class="section container">
+      <div class="section-header">
+        <h2>World Tour 2026</h2>
+        <p>Próximas paradas confirmadas en clubes y festivales internacionales.</p>
+      </div>
+
+      <div class="grid-cards">
+        <article class="card">
+          <span class="card-tag">España</span>
+          <h3>Barcelona &bull; Input</h3>
+          <p>Sesión extendida de 3 horas en formato club íntimo.</p>
+        </article>
+
+        <article class="card">
+          <span class="card-tag">Países Bajos</span>
+          <h3>Ámsterdam &bull; Shelter</h3>
+          <p>Noche especial presentando nuevo material inédito.</p>
+        </article>
+
+        <article class="card">
+          <span class="card-tag">Alemania</span>
+          <h3>Berlín &bull; Watergate</h3>
+          <p>Sonido melódico y progresivo frente al río Spree.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer id="contacto" class="footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <a href="#" class="logo">Patrice<span>Bäumel</span></a>
+        <p>Fanpage dedicada a la música electrónica melódica.</p>
+      </div>
+      <ul class="footer-links">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#tracks">Tracks</a></li>
+        <li><a href="#tour">Tour</a></li>
+        <li><a href="#">SoundCloud</a></li>
+      </ul>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Patrice Bäumel Tribute. Proyecto Módulo 1.</p>
+    </div>
+  </footer>
+
+  <!-- CAMBIO DE TEMA DE COLOR ALEATORIO AL ENTRAR -->
+  <script>
+    const temas = [
+      { accent: "#6366f1", hover: "#4f46e5", glow: "#1e1b4b" }, // Índigo Afterlife
+      { accent: "#ec4899", hover: "#db2777", glow: "#500724" }, // Neón club
+      { accent: "#10b981", hover: "#059669", glow: "#064e3b" }, // Esmeralda oscuro
+      { accent: "#06b6d4", hover: "#0891b2", glow: "#164e63" }  // Cian profundo
+    ];
+
+    const temaAleatorio = temas[Math.floor(Math.random() * temas.length)];
+    const root = document.documentElement;
+
+    root.style.setProperty("--accent", temaAleatorio.accent);
+    root.style.setProperty("--accent-hover", temaAleatorio.hover);
+    root.style.setProperty("--hero-glow", temaAleatorio.glow);
+  </script>
+
+</body>
+</html>
